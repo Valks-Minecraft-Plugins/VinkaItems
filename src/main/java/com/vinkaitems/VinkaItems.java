@@ -73,6 +73,10 @@ public class VinkaItems extends JavaPlugin {
 		return item;
 	}
 	
+	public static ItemStack BONEMEAL() {
+		return ItemModule.item("Cluster of Bones", "Plant Steroids", Material.BONE_MEAL);
+	}
+	
 	public static ItemStack ENDER_PEARL() {
 		return ItemModule.item("Orb", "Mysterious Orb", Material.ENDER_PEARL);
 	}
