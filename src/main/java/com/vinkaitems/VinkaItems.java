@@ -13,62 +13,74 @@ import com.valkutils.modules.ItemModule;
 public class VinkaItems extends JavaPlugin {
 	public static List<ItemStack> items = new ArrayList<ItemStack>();
 	
+	public static ItemStack SOUL_SAND() {
+		return ItemModule.item("Soul Sand", "Holds a cluster of trapped souls..", Material.SOUL_SAND);
+	}
+	
+	public static ItemStack WHEAT() {
+		return ItemModule.item("Wheat", "Used to breed animals.", Material.WHEAT);
+	}
+	
+	public static ItemStack CARROT() {
+		return ItemModule.item("String Plant", "Get String on Harvest", Material.CARROT);
+	}
+	
 	public static ItemStack ENHANCED_HELMET() {
-		ItemStack item = ItemModule.item("Enhanced Helmet", "?", Material.DIAMOND_HELMET);
+		ItemStack item = ItemModule.item("Enhanced Helmet", "Advanced variation of the diamond helmet.", Material.DIAMOND_HELMET);
 		item.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_CHESTPLATE() {
-		ItemStack item = ItemModule.item("Enhanced Chestplate", "?", Material.DIAMOND_CHESTPLATE);
+		ItemStack item = ItemModule.item("Enhanced Chestplate", "Advanced variation of the diamond chestplate.", Material.DIAMOND_CHESTPLATE);
 		item.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_LEGGINGS() {
-		ItemStack item = ItemModule.item("Enhanced Leggings", "?", Material.DIAMOND_LEGGINGS);
+		ItemStack item = ItemModule.item("Enhanced Leggings", "Advanced variation of the diamond leggings.", Material.DIAMOND_LEGGINGS);
 		item.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_BOOTS() {
-		ItemStack item = ItemModule.item("Enhanced Boots", "?", Material.DIAMOND_BOOTS);
+		ItemStack item = ItemModule.item("Enhanced Boots", "Advanced variation of the diamond boots.", Material.DIAMOND_BOOTS);
 		item.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_BOW() {
-		ItemStack item = ItemModule.item("Enhanced Bow", "?", Material.BOW);
+		ItemStack item = ItemModule.item("Enhanced Bow", "Advanced variation of the bow.", Material.BOW);
 		item.addEnchantment(Enchantment.DAMAGE_ALL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_SWORD() {
-		ItemStack item = ItemModule.item("Enhanced Sword", "?", Material.DIAMOND_SWORD);
+		ItemStack item = ItemModule.item("Enhanced Sword", "Advanced variation of the diamond sword.", Material.DIAMOND_SWORD);
 		item.addEnchantment(Enchantment.DAMAGE_ALL, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_AXE() {
-		ItemStack item = ItemModule.item("Enhanced Axe", "?", Material.DIAMOND_AXE);
+		ItemStack item = ItemModule.item("Enhanced Axe", "Advanced variation of the diamond axe.", Material.DIAMOND_AXE);
 		item.addEnchantment(Enchantment.DIG_SPEED, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_HOE() {
-		ItemStack item = ItemModule.item("Enhanced Hoe", "?", Material.DIAMOND_HOE);
+		ItemStack item = ItemModule.item("Enhanced Hoe", "Advanced variation of the diamond hoe.", Material.DIAMOND_HOE);
 		item.addEnchantment(Enchantment.DURABILITY, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_PICKAXE() {
-		ItemStack item = ItemModule.item("Enhanced Pickaxe", "?", Material.DIAMOND_PICKAXE);
+		ItemStack item = ItemModule.item("Enhanced Pickaxe", "Advanced variation of the diamond pickaxe.\nCrouch while mining to mine a 3x3x3 area.", Material.DIAMOND_PICKAXE);
 		item.addEnchantment(Enchantment.DIG_SPEED, 2);
 		return item;
 	}
 	
 	public static ItemStack ENHANCED_SHOVEL() {
-		ItemStack item = ItemModule.item("Enhanced Shovel", "?", Material.DIAMOND_SHOVEL);
+		ItemStack item = ItemModule.item("Enhanced Shovel", "Advanced variation of the diamond shovel.", Material.DIAMOND_SHOVEL);
 		item.addEnchantment(Enchantment.DIG_SPEED, 2);
 		return item;
 	}
@@ -78,31 +90,31 @@ public class VinkaItems extends JavaPlugin {
 	}
 	
 	public static ItemStack ENDER_PEARL() {
-		return ItemModule.item("Orb", "Mysterious Orb", Material.ENDER_PEARL);
+		return ItemModule.item("Orb", "Mysterious Orb\nIt's like a ingot.", Material.ENDER_PEARL);
 	}
 	
 	public static ItemStack FLINT_AND_STEEL() {
-		return ItemModule.item("Fire Starter", "Fire..", Material.FLINT_AND_STEEL);
+		return ItemModule.item("Ms Fire", "Are you ready for the nether?", Material.FLINT_AND_STEEL);
 	}
 	
 	public static ItemStack DIAMOND_HORSE_ARMOR() {
-		return ItemModule.item("Diamond Horse Armor", "It's super effective!", Material.DIAMOND_HORSE_ARMOR);
+		return ItemModule.item("Diamond Horse Armor", "Gives diamond protection to your horse.", Material.DIAMOND_HORSE_ARMOR);
 	}
 	
 	public static ItemStack GOLD_HORSE_ARMOR() {
-		return ItemModule.item("Golden Horse Armor", "It's super effective!", Material.GOLDEN_HORSE_ARMOR);
+		return ItemModule.item("Golden Horse Armor", "Gives golden protection to your horse.", Material.GOLDEN_HORSE_ARMOR);
 	}
 	
 	public static ItemStack IRON_HORSE_ARMOR() {
-		return ItemModule.item("Iron Horse Armor", "It's super effective!", Material.IRON_HORSE_ARMOR);
+		return ItemModule.item("Iron Horse Armor", "Gives iron protection to your horse.", Material.IRON_HORSE_ARMOR);
 	}
 	
 	public static ItemStack SHEARS() {
-		return ItemModule.item("Shears", "Snip, snip!", Material.SHEARS);
+		return ItemModule.item("Ms. Cutty", "Snip! Snip!", Material.SHEARS);
 	}
 	
 	public static ItemStack LAPIS() {
-		return ItemModule.item("Lapis", "Very Powerful Magic", Material.LAPIS_LAZULI);
+		return ItemModule.item("Lapis", "Enchantment Table Essence", Material.LAPIS_LAZULI);
 	}
 	
 	public static ItemStack BEACON() {
@@ -110,7 +122,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 	
 	public static ItemStack OBSIDIAN() {
-		return ItemModule.item("Obsidian", "Very tough!", Material.OBSIDIAN);
+		return ItemModule.item("Obsidian", "Very tough!\nReady for the nether?", Material.OBSIDIAN);
 	}
 	
 	public static ItemStack CAULDRON() {
@@ -118,19 +130,19 @@ public class VinkaItems extends JavaPlugin {
 	}
 	
 	public static ItemStack ELYTRA() {
-		return ItemModule.item("Wings", "Fly!", Material.ELYTRA);
+		return ItemModule.item("Wings", "Fly!\nRight click the air with a item to fly high in the sky.", Material.ELYTRA);
 	}
 	
 	public static ItemStack STICKY_PISTON() {
-		return ItemModule.item("Sticky Piston", "Mechanical machinary", Material.STICKY_PISTON);
+		return ItemModule.item("Sticky Piston", "Secret doors?\nTraps?\nWho knows?", Material.STICKY_PISTON);
 	}
 	
 	public static ItemStack PISTON() {
-		return ItemModule.item("Piston", "Mechanical machinary", Material.PISTON);
+		return ItemModule.item("Piston", "Secret doors?\nTraps?\nWho knows?", Material.PISTON);
 	}
 	
 	public static ItemStack REDSTONE() {
-		return ItemModule.item("Red Magic", "Mysterious Red Magical Substance", Material.REDSTONE);
+		return ItemModule.item("Red Magic", "Secret doors?\nTraps?\nWho knows?", Material.REDSTONE);
 	}
 	
 	public static ItemStack ANVIL() {
@@ -362,7 +374,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static ItemStack DIAMOND_PICKAXE() {
-		return ItemModule.tool("Azurite Pick", "Mines Stone", Material.DIAMOND_PICKAXE);
+		return ItemModule.tool("Azurite Pick", "Crouch while mining to mine a 3x3x3 area.", Material.DIAMOND_PICKAXE);
 	}
 
 	public static ItemStack DIAMOND_AXE() {
@@ -418,15 +430,15 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static ItemStack IRON_BLOCK() {
-		return ItemModule.item("Condensed Cerussite", "?", Material.IRON_BLOCK);
+		return ItemModule.item("Condensed Cerussite", "These blocks have no gravity.", Material.IRON_BLOCK);
 	}
 
 	public static ItemStack CRAFTING_TABLE() {
-		return ItemModule.item("Crafting Table", "?", Material.CRAFTING_TABLE);
+		return ItemModule.item("Crafting Table", "Explore many new recipes.", Material.CRAFTING_TABLE);
 	}
 
 	public static ItemStack COAL() {
-		return ItemModule.item("Coal", "?", Material.COAL);
+		return ItemModule.item("Coal", "Used to make iron.", Material.COAL);
 	}
 
 	public static ItemStack IRON_ORE() {
@@ -442,15 +454,15 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static ItemStack GRAY_DYE() {
-		return ItemModule.item("Stone Pebble", "?", Material.GRAY_DYE);
+		return ItemModule.item("Stone Pebble", "Better then a wood pebble?", Material.GRAY_DYE);
 	}
 
 	public static ItemStack DRIED_KELP() {
-		return ItemModule.item("Dirt", "?", Material.DRIED_KELP);
+		return ItemModule.item("Dirt", "Use 9 of these at a crafting table to make a dirt block.", Material.DRIED_KELP);
 	}
 
 	public static ItemStack BEETROOT_SEEDS() {
-		return ItemModule.item("Seeds", "Grows fast but not very rich.", Material.BEETROOT_SEEDS);
+		return ItemModule.item("Seeds", "Grows fast but not very rich.\nSpreads across the world over time.", Material.BEETROOT_SEEDS);
 	}
 
 	public static ItemStack BEETROOT() {
@@ -479,7 +491,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static ItemStack WHEAT_SEEDS() {
-		return ItemModule.item("Super Plant", "Grows super slow but very rewarding.", Material.WHEAT_SEEDS);
+		return ItemModule.item("Super Plant", "Grows super slow but very rewarding.\nSpreads across the world over time.", Material.WHEAT_SEEDS);
 	}
 
 	public static ItemStack BAKED_POTATO() {
