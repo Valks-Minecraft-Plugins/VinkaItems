@@ -3512,7 +3512,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static VinkaItem SIGN() {
-		VinkaItem item = new VinkaItem(Material.SIGN);
+		VinkaItem item = new VinkaItem(Material.OAK_SIGN);
 		item.setValue(5000);
 		item.setWeight(Weight.LIGHT());
 		item.setRarity(Rarity.COMMON());
@@ -4888,7 +4888,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static VinkaItem DANDELION_YELLOW() {
-		VinkaItem item = new VinkaItem(Material.DANDELION_YELLOW);
+		VinkaItem item = new VinkaItem(Material.DANDELION);
 		item.setName("Unrefined Limonite");
 		item.setLore("Burn it in a Furnace");
 		item.setValue(1000);
@@ -5362,7 +5362,7 @@ public class VinkaItems extends JavaPlugin {
 	}
 
 	public static VinkaItem ROSE_RED() {
-		VinkaItem item = new VinkaItem(Material.ROSE_RED);
+		VinkaItem item = new VinkaItem(Material.ROSE_BUSH);
 		item.setValue(10000);
 		item.setWeight(Weight.VERY_LIGHT());
 		item.setRarity(Rarity.RARE());
